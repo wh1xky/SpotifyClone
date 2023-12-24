@@ -7,7 +7,7 @@ import {RxCaretLeft, RxCaretRight} from "react-icons/rx";
 import {HiHome, HiSearch} from "react-icons/hi";
 import Button from "@/components/Button";
 
-interface HeaderProps {
+type HeaderProps = {
     children: React.ReactNode
     className?: string
 }

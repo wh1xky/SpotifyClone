@@ -5,7 +5,7 @@ import {useRouter} from "next/navigation";
 import Image from "next/image"
 import {FaPlay} from "react-icons/fa6";
 
-interface ListItemProps {
+type ListItemProps = {
     image: string
     name: string
     href: string

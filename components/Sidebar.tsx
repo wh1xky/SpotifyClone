@@ -7,7 +7,7 @@ import Box from "./Box";
 import SidebarItem from "@/components/SidebarItem";
 import Library from "@/components/Library";
 
-interface SidebarProps {
+type SidebarProps = {
     children: React.ReactNode
 }
 
