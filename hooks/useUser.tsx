@@ -1,5 +1,4 @@
-import { User } from "@supabase/auth-helpers-nextjs"
-import {useSessionContext, useUser as useSupaUser} from "@supabase/auth-helpers-react";
+import {useSessionContext, User, useUser as useSupaUser} from "@supabase/auth-helpers-react";
 import {createContext, useContext, useEffect, useState} from "react";
 
 import {Subscription, UserDetails} from "@/types";
@@ -72,7 +71,7 @@ export const MyUserContextProvider = (props: Props) => {
         isLoading: isLoadingUser || isLoadingData,
         subscription
     }
-    return<UserContext.Provider value={value} {...props}/>
+    return <UserContext.Provider value={value} {...props}/>
 }
 
 export const useUser = () => {
